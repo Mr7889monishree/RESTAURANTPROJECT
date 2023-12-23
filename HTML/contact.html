@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="icon" href="/images/icons8-create-order-30.png" type="image/X-icon">
+</head>
+<body>
+    <header>
+        <h1>🎊 Food Order 🎊</h1>
+    </header>
+    <main>
+        <form action="https:://httpbin.org/get" method="get" class="input">
+            <img src="/images/burger.jpg" alt="burger" width="500px" height="200vh" loading="lazy">
+            <figure class="file">
+                <img src="/images/emoji3.jpg" alt="emoji" width="200px" height="200vh" loading="lazy">
+            </figure>
+            <!--<p>
+                <label for="Phone">PhoneNo Of The Customer:</label>
+                <input type="text" id="Phone" name="Phone" required>
+            </p>  --> 
+            <p>
+                <label for="Name">Name Of The Customer(For Reference):</label>
+                <input type="text" id="Name" name="Name" required>
+            </p>    
+            <br><br>
+            <p>
+                <label for="add">Address:</label>
+                <textarea name="add" id="add"  col="2" rows="7"></textarea>
+            </p>
+            <br>
+            <p>
+                <label for="mail">MailID:</label>
+                <input type="email" id="mail" name="mail" required>
+            </p> 
+            <br> 
+            <p>
+                <label for="pass">password:</label>
+                <input type="password" id="pass" name="pass" required>
+            </p> 
+            <br><br>
+            <p>
+                <label for="type">Food Type:</label>
+                <select name="type" id="type">
+                    <option value="Mild">Mild</option>
+                    <option value="Sweet">Sweet</option>
+                    <option value="Spicy">Spicy</option>
+                </select>
+            </p>
+            <br><br>
+            <p>
+                <label for="food">Starters</label>
+                <input type="text" name="food" id="food" list="food-list">
+                <datalist id="food-list">
+                    <optgroup label="Starters">
+                        <option value=" Chicken Soup">Chicken soup</option>
+                        <option value="Schezwan  Soup">Schezwan soup</option>
+                        <option value="Burrata bruschetta">Burrata bruschetta</option>
+                        <option value="Burrata al tartufo">Burrata al tartufo</option>
+                        <option value="Italian scotch olives">Italian scotch olives </option>
+                        <option value="Sicilian salad">Sicilian salad</option>
+                        <option value="Grilled vegetable antipasti">Grilled vegetable antipasti</option>
+                        <option value="Italian flatbread with pear, walnut and gorgonzola">Italian flatbread with pear, walnut and gorgonzola</option>
+                        <option value="Broad bean and mint panzanella with burrata">Broad bean and mint panzanella with burrata
+                        </option>
+                    <optgroup>
+
+
+                </datalist>
+            </p>
+            <br><br>
+            <p>
+                <label for="food">Main Dish</label>
+                <input type="text" name="food" id="food" list="main-list">
+                <datalist id="main-list">
+                    <optgroup label="Starters">
+                        <option value=" Chicken Soup">Chicken soup</option>
+                        <option value="Schezwan  Soup">Schezwan soup</option>
+                        <option value="Burrata bruschetta">Burrata bruschetta</option>
+                        <option value="Burrata al tartufo">Burrata al tartufo</option>
+                        <option value="Italian scotch olives">Italian scotch olives </option>
+                        <option value="Sicilian salad">Sicilian salad</option>
+                        <option value="Grilled vegetable antipasti">Grilled vegetable antipasti</option>
+                        <option value="Italian flatbread with pear, walnut and gorgonzola">Italian flatbread with pear, walnut and gorgonzola</option>
+                        <option value="Broad bean and mint panzanella with burrata">Broad bean and mint panzanella with burrata
+                        </option>
+                    <optgroup>
+
+
+                </datalist>
+            </p>
+            <br><br>
+            <p>
+                <label for="food">Refreshment Drinks</label>
+                <input type="text" name="food" id="food" list="refresh-list">
+                <datalist id="refresh-list">
+                    <optgroup>
+                        <option value="Aperitivo">Aperitivo</option>
+                        <option value="Negroni">Negroni</option>
+                        <option value=" Campari"> Campari</option>
+                        <option value="Americano">Americano</option>
+                        <option value=" Spritz"> Spritz</option>
+                        <option value="Bellini">Bellini</option>
+                    </optgroup>
+
+                </datalist>
+
+            </p>
+            <br><br>
+            <p>
+                <label for="payment">Payment method:</label>
+                <input type="radio" id="payment" name="payment" value="G-PAY">
+                <label for="G-PAY">G-PAY</label>
+                <input type="radio" id="payment" name="payment" value="PAYTM">
+                <label for="PAYTM">PAYTM</label>
+                <input type="radio" id="payment" name="payment" value="NET BANKING">
+                <label for="NET BANKING">NET BANKING</label>
+                <input type="radio" id="payment" name="payment" value="CASH">
+                <label for="CASH">CASH</label>
+            </p>
+            <br><br>
+            <br>
+            <p>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Pay</button>
+            </p>
+
+
+
+
+
+
+        </form>
+        <p class="last">
+            Thanks For Ordering Our Food..We will make your journey of your food safe  and hope to have more orders from
+            you. After you order your food your food will receive within five minutes to your home and there is no delivery charge here 
+            only in this hotel we will have a great offer by buying food for more than 1000 rupees You will get a coupoun to go to any tourist
+            places as you would prefer as a temperory month coupon monthly it will change
+
+            Thank you and see you soon!!
+        </p>
+    </main>
+    <footer>
+        <figure>
+            <img src="/images/thanksend.jpg" alt="thanks" width="500px" height="500px" loading="lazy" style="scroll-behavior: smooth;">
+        </figure>
+    </footer>
+    
+</body>
+</html>

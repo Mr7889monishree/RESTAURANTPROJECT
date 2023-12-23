@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1.5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image:radial-gradient(white,lightblue);
+}
+:root{
+    --DARK:#374151;
+    --LIGHT:#EEE;
+    --PINK:#EC4899;
+    --GREY:#6B7280;
+    --DARKEST:#1F2937;
+    --PURPLE:#8B5Cf6;
+    --BLUE:blue
+}
+header h1{
+    color:hsla(0, 0%, 49%, 0.7);
+    text-align: center;
+    padding: 1em ;
+    font-size: 3rem;
+    font-weight: 800px;
+    background-image: url(../images/scenery.jpg);
+    background-position: bottom;
+    background-size: 100%;
+    -webkit-background-clip:text;
+}
+figure{
+    text-align: center;
+    scroll-behavior: smooth;
+    cursor: pointer;
+
+}
+.side{
+    color:yellow;
+    font-weight: bolder;
+    border: 2px solid black;
+    width: 10%;
+    height: 10vh;
+    background-image: url(../images/scenery.jpg);
+    background-position: bottom right;
+    text-align: bottom;
+    transform: translateX(160%) translateY(-170%) rotate(-45deg) ;
+    animation: 4s showmenu 0.5s normal ease-in-out forwards;
+
+}
+
+@keyframes showmenu{
+    0%{
+        transform: scaleY(0) translateX(160%) translateY(-170%) rotate(-45deg);
+    }
+    80%{
+        transform: scaleY(1.2);
+    }
+    100%{
+        transform: scaleY(1) translateX(160%) translateY(-170%) rotate(-45deg);
+    }
+}
+table,th,tr,td,caption{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    animation: 2s Slide 6.5s normal forwards ease-in-out;
+}
+@keyframes Slide{
+    0%{
+        transform: scaleY(0);
+    }
+    50%{
+        transform:scaleY(1.2);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+th{
+    color: red;
+}
+td{
+    color: midnightblue;
+}
